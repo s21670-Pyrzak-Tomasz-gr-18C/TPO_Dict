@@ -1,0 +1,10 @@
+dom house
+samochód car
+rower bike
+motycykl motorcycle
+pies dog
+kot cat
+woda water
+słoń elephant
+drzwi door
+okno window
