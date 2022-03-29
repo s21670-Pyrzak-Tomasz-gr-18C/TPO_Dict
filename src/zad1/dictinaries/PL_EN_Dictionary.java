@@ -31,7 +31,9 @@ public class PL_EN_Dictionary {
     }
 
     public static void main(String[] args) {
-        Dictionary dictionary = new Dictionary("EN");
+        Dictionary dictionary = new Dictionary("src\\PL-EN.txt");
         System.out.println(dictionary.getTranslatedWord("słoń"));
+
+
     }
 }

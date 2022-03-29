@@ -17,10 +17,10 @@ public class ENServer {
     private BufferedReader in = null;
     private PrintWriter out = null;
 
-    public ENServer(PL_EN_Dictionary dictionary, ServerSocket ss) {
-        this.dictionary = dictionary;
+    public ENServer(String dictionary, ServerSocket ss) {
+        this.dictionary = new PL_EN_Dictionary(dictionary);
         this.ss = ss;
-        System.out.println("Server started");
+        System.out.println("Server EN started");
         System.out.println("at port: " + ss.getLocalPort());
         System.out.println("bind address: " + ss.getInetAddress());
 
@@ -112,8 +112,9 @@ public class ENServer {
       int port = 2300;
 
       dictionary = new PL_EN_Dictionary(dictionaryFile);
+        System.out.println(dictionary.getTranslatedWord("słoń"));
 
-      InetSocketAddress isa = new InetSocketAddress(host,port);
+        InetSocketAddress isa = new InetSocketAddress(host,port);
       ss = new ServerSocket();
       ss.bind(isa);
 
@@ -121,8 +122,10 @@ public class ENServer {
       ex.printStackTrace();
       System.exit(1);
     }
-    new ENServer(dictionary,ss);
+ //   new ENServer(dictionary,ss);
   }
+
+
 
 
 }

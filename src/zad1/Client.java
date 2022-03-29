@@ -33,6 +33,8 @@ public class Client {
             out.writeObject(clientWaitingPort+" "+lang+" "+wordToTranslate);
             out.flush();
             clientSocket.close();
+
+
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -70,7 +72,7 @@ public class Client {
     }
 
     private void sendResponseToGUI(String response){
-
+        System.out.println("response for gui: "+response);
     }
 
 

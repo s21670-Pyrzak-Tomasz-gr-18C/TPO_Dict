@@ -7,6 +7,7 @@ import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.io.IOException;
 
 public class AppMenu {
     int width = Toolkit.getDefaultToolkit().getScreenSize().width;
@@ -70,6 +71,11 @@ public class AppMenu {
             String code = languageCodeField.getText();
             int portNumber = Integer.valueOf(portNumberField.getText());
             Client client = new Client(portNumber,code,word);
+            try {
+                client.translate();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
 
 
         });
