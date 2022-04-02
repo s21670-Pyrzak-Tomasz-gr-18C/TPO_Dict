@@ -7,12 +7,9 @@ import java.util.Map;
 
 public class Dictionary {
     private Map <String,String>dictionaryMap = new HashMap();
-    private String languageCode;
     private String fileName;
 
-    //konstruktor tworzy słownik z pliku
     public Dictionary(String fileName) {
-
         try{
             BufferedReader br = new BufferedReader(new FileReader(fileName));
             String line;

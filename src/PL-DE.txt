@@ -1,0 +1,10 @@
+dom haus
+samochód wagen
+rower fahrrad
+motocykl motorrad
+pies hund
+kot katze
+woda wasser
+słoń elefant
+drzwi tür
+okno fenster

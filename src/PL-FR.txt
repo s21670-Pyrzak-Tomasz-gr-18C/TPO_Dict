@@ -1,0 +1,10 @@
+dom loger
+samochód auto
+rower bicyclette
+motycykl moto
+pies chien
+kot chat
+woda l'eau
+słoń l'éléphant
+drzwi porte
+okno la fenêtre

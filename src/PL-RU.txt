@@ -1,0 +1,10 @@
+dom дом
+samochód машина
+rower велосипед
+motycykl мотоцикл
+pies собака
+kot kот
+woda вода
+słoń слон
+drzwi дверь
+okno окно
