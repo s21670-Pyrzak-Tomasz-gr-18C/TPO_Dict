@@ -1,14 +1,16 @@
 package zad1;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+
 public class Client {
     private  int clientWaitingPort;
-    private final String lang;
+    private String lang;
     private  String wordToTranslate;
     private ServerSocket serverSocket;
     private boolean translationNotReceived;
